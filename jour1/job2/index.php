@@ -4,6 +4,7 @@
  	echo "Hello LaPlateforme!";
  	/*
  		il est bien !
+ 		
 	 */
  		
  	#n'est ce pas ?
