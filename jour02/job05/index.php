@@ -5,6 +5,9 @@
 	<title></title>
 </head>
 <body>
+<div>
+	Réactualisez si le texte n'est pas lisible.
+</div>
 	<?php
 
 $nb=2;
@@ -28,5 +31,6 @@ $nb++;
 }
 
 ?>
+
 </body>
 </html>

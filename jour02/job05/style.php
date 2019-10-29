@@ -13,7 +13,7 @@
 
 	function taille()
 	{
-		$px=random_int(10, 50);
+		$px=random_int(20, 60);
 		return $px;
 	}
 
@@ -31,7 +31,15 @@ body{
 	background: linear-gradient(<?php echo deg();?>deg, <?php echo couleur();?>, <?php echo couleur();?>, <?php echo couleur();?>);
 	background-attachment: fixed;
 	color:<?php echo couleur();?>;
+	text-shadow: 3px 3px 2px rgba(24, 25, 26, 0.46);
 	font-size:<?php echo taille(); ?>px;
 	padding-left:<?php echo taille(); ?>%;
 	height: 100vh;
+}
+div{
+	color:<?php echo couleur();?>;
+	text-shadow: 3px 3px 2px rgba(24, 25, 26, 0.46);
+	font-size:<?php echo taille(); ?>px;
+	padding:1%;
+	text-align:center;
 }
