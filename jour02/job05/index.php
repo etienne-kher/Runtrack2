@@ -1,4 +1,11 @@
-<?php
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.php">
+	<title></title>
+</head>
+<body>
+	<?php
 
 $nb=2;
 
@@ -21,3 +28,5 @@ $nb++;
 }
 
 ?>
+</body>
+</html>
