@@ -6,18 +6,17 @@
 </head>
 <body>
 	<?php 
-
+	
 	$str="Dans l'espace, personne ne vous entend crier";
 	$i=0;
-	$taille=strlen($str);
-
-	while ($i <$taille) {
-		
+	do{
 		$i++;
-	}
-
-	echo "il y a $i caractères ";
+		$is=isset($str[$i]);
+		}
+		while($is==true);
+		echo "il y a $i caractères ";
 
 	 ?>
+	
 </body>
 </html>
