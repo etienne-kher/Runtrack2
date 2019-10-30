@@ -5,6 +5,8 @@
 	<title>job 7</title>
 </head>
 <body>
+
+	<h1>
 	<?php 
 
 	$str="Certaines choses changent, et d'autres ne changeront jamais.";
@@ -24,5 +26,6 @@
 	}
 
 	 ?>
+	</h1>
 </body>
 </html>
