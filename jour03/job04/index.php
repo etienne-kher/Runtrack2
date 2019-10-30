@@ -7,7 +7,7 @@
 <body>
 	<?php 
 	
-	$str="Dans l'espace, personne ne vous entend crier";
+	$str="Dans l'espace, personne ne vous entend crier.";
 	$i=0;
 	do{
 		$i++;
