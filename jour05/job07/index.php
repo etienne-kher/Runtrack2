@@ -20,21 +20,22 @@
 
 
 		function gras($str)
-		{	$taille = strlen($str) ;
-			$i = 0;
-
-			while($i<$taille)
-			{	
-				$testmaj=ctype_upper($str[$i]);
-				if ($testmaj==true) 
-				{	$str=str_replace($str[$i],"<b>$str[$i]</b>",$str);
-					$i+=8;
-					$taille+=7;
+		{	
+			$tab=explode(" ", $str);
+			$long=count($tab)-1;
+			$i=0;
+			$str="";
+			while($i<=$long) 
+			{	$testmaj=ctype_upper($tab[$i][0]);
+				if($testmaj==true)
+				{
+					$tab[$i]="<b>".$tab[$i]."</b>";
 				}
 				
+				$str=$str.$tab[$i]." ";
 				$i++;
-				
 			}
+
 			return $str;
 		}
 
@@ -94,7 +95,7 @@
 					echo(gras($_POST["str"]));
 					break;
 				case 'cesar':
-					if (isset($_POST["ec"])==true) 
+					if (!empty($_POST['ec'])) 
 					{
 						echo(cesar($_POST["str"],$_POST["ec"]));
 					}
